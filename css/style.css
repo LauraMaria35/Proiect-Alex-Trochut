@@ -1,0 +1,804 @@
+@import url(//db.onlinewebfonts.com/c/cc4e55b58216e47bb86dc3ccdb3ba335?family=Utopian+Two+BW);
+@font-face {font-family: "Utopian Two BW"; src: url("//db.onlinewebfonts.com/t/cc4e55b58216e47bb86dc3ccdb3ba335.eot"); src: url("//db.onlinewebfonts.com/t/cc4e55b58216e47bb86dc3ccdb3ba335.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cc4e55b58216e47bb86dc3ccdb3ba335.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/cc4e55b58216e47bb86dc3ccdb3ba335.woff") format("woff"), url("//db.onlinewebfonts.com/t/cc4e55b58216e47bb86dc3ccdb3ba335.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/cc4e55b58216e47bb86dc3ccdb3ba335.svg#Utopian Two BW") format("svg"); }
+@import url(//db.onlinewebfonts.com/c/0f4f4c551473e93fb6680c8b477c05c8?family=Dystopian);
+@font-face {font-family: "Dystopian"; src: url("//db.onlinewebfonts.com/t/0f4f4c551473e93fb6680c8b477c05c8.eot"); src: url("//db.onlinewebfonts.com/t/0f4f4c551473e93fb6680c8b477c05c8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0f4f4c551473e93fb6680c8b477c05c8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0f4f4c551473e93fb6680c8b477c05c8.woff") format("woff"), url("//db.onlinewebfonts.com/t/0f4f4c551473e93fb6680c8b477c05c8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0f4f4c551473e93fb6680c8b477c05c8.svg#Dystopian") format("svg"); }
+@import url(//db.onlinewebfonts.com/c/2384dbe9d0be880d561f4cdf7d4f4a2d?family=Utopian+One+BW);
+@font-face {font-family: "Utopian One BW"; src: url("//db.onlinewebfonts.com/t/2384dbe9d0be880d561f4cdf7d4f4a2d.eot"); src: url("//db.onlinewebfonts.com/t/2384dbe9d0be880d561f4cdf7d4f4a2d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2384dbe9d0be880d561f4cdf7d4f4a2d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2384dbe9d0be880d561f4cdf7d4f4a2d.woff") format("woff"), url("//db.onlinewebfonts.com/t/2384dbe9d0be880d561f4cdf7d4f4a2d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2384dbe9d0be880d561f4cdf7d4f4a2d.svg#Utopian One BW") format("svg"); }
+@import url(//db.onlinewebfonts.com/c/f6376fe0d7fbbcbc4b803c622b67f332?family=Dystopian+Bold);
+@font-face {font-family: "Dystopian Bold"; src: url("//db.onlinewebfonts.com/t/f6376fe0d7fbbcbc4b803c622b67f332.eot"); src: url("//db.onlinewebfonts.com/t/f6376fe0d7fbbcbc4b803c622b67f332.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f6376fe0d7fbbcbc4b803c622b67f332.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f6376fe0d7fbbcbc4b803c622b67f332.woff") format("woff"), url("//db.onlinewebfonts.com/t/f6376fe0d7fbbcbc4b803c622b67f332.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f6376fe0d7fbbcbc4b803c622b67f332.svg#Dystopian Bold") format("svg"); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+img{
+    display: block;
+}
+  
+  #container {
+      margin: 0 auto;
+      width: 1280px;
+  }
+
+
+  /*HEADER*/
+
+  header {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      background-color: white;
+      height: auto;
+      position: fixed;
+      top: 0;
+      opacity: 0.9;
+  }
+
+#naam {
+  color: white;
+  width: 400px;
+  position: relative;
+    background-color: rgb(18, 112, 219);
+    border: black solid 8px;
+  }
+  
+#naam h1 {
+    color: white;
+    padding: 10px 0px 20px 20px;
+    font-family: "Utopian Two BW";
+    font-size: 50px;
+    }
+
+#box1{
+    transform: skew(10deg);
+      position: absolute;
+      background-color: rgb(255, 196, 0);
+      width: 105px;
+      height: 165px;
+      top: -7px;
+      right: -60px;
+      transform:rotate(-40deg);
+      transform: skew(30deg);
+      border: black solid 8px;
+    }
+
+#navigatie{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding-left: 120px;
+    padding-right: 160px;
+    padding-top: 60px;
+}
+
+  nav ul {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  nav ul li {
+      display: flex;
+      list-style: none;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  nav ul li img{
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(18, 112, 219);
+    font-family: "Utopian Two BW";
+    padding: 3px;
+    border: solid black 3px;
+  }
+
+  nav ul li a:hover{
+      background-color:  rgb(255, 196, 0);
+      color: rgb(18, 112, 219);
+      transform: skew(25deg);
+  }
+
+  /* social media*/
+
+#socialMedia {
+  width: 130px;
+  position: fixed;
+  right: -120px;
+  transition: all .5s;  
+  border-radius: 0 0 15px 0;
+}
+
+#socialMedia:hover {
+  right: 0;
+}
+
+#socialMedia ul{
+ margin-left: 10px;
+  list-style: none;
+  background-color: rgb(218, 33, 57);
+  border-bottom: rgb(255, 196, 0) outset 4px;
+}
+
+#socialMedia li {
+  height: 48px;
+  line-height: 49px; 
+  border: rgb(255, 196, 0) outset 4px;
+}
+
+#socialMedia a {
+  display: block;
+  text-decoration: none;
+  padding-left: 30px;
+}
+
+#socialMedia a:hover {
+  transition: all 0.5s;
+  opacity: 0.6;
+}
+
+#socialMediaBox{
+  position: absolute;
+  left: -50px;
+  width: 60px;
+  height: 60px;
+  border: rgb(255, 196, 0) outset 8px;
+  background-color: rgb(18, 112, 219);
+background-image:  linear-gradient(135deg, black 25%, transparent 25%), linear-gradient(225deg, black 25%, transparent 25%), linear-gradient(45deg, black 25%, transparent 25%), linear-gradient(315deg, black 25%, rgb(18, 112, 219) 25%);
+background-position:  10px 0, 10px 0, 0 0, 0 0;
+background-size: 20px 20px;
+background-repeat: repeat;
+  animation: go 6s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes go{
+  0%{
+    background-position:  210px 200px, 210px 200px, 200px 200px, 200px 200px;
+  }
+  100%{
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+  }
+}
+
+.facebook {
+  background-color: #3b5998;
+  
+}
+
+.instagram{
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+ 
+}
+
+.behance {
+  background-color: #053eff;
+
+}
+
+.twitter{
+  background-color: #00acee;
+}
+
+ /* main */
+
+ #mainSection{
+      padding: 250px 50px 50px 50px;
+ }
+
+ #text {
+  font-family: "Dystopian";
+  font-size: 18px;
+  padding: 40px 120px;
+ }
+
+  /*footer*/
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: white;
+  }
+
+  #copyright{
+    padding-left: 590px;
+  }
+
+  #name{
+    text-align: end;
+    padding-right: 10px;
+  }
+
+
+  /*Home pagina */
+
+  #text h1{
+    background-color: red;
+    border: solid black 10px;
+    border-bottom: 5px;
+    padding: 32px;
+  }
+  
+  #text h2{
+    border: solid black 10px;
+    padding: 34px 26px 34px 26px;
+    line-height: 47px;
+    font-family: "Dystopian Bold";
+    font-size: 28px;
+  }
+  
+  #text span {
+    color: red;
+  }
+
+  #homeDesignBox {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  #homeDesignBoxSection1{
+  display: flex;
+  justify-content: space-between;
+  border: solid black 14px;
+  }
+  
+  #designBoxSection1_1{
+  line-height: 116px;
+  font-family: "Dystopian";
+  font-size: 180px;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  }
+  
+  #designBoxSection1_2{
+    border-left: solid black 14px;
+  }
+  
+  #design1{
+    font-family: "Utopian Two BW";
+    font-size: 90px;
+    background-color: rgb(255, 196, 0);
+    line-height: 70px;
+    border-bottom: solid black 14px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  
+  #design2{
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  .design2_1{
+    font-family: "Dystopian Bold";
+    font-size: 60px;
+    text-align: center;
+    line-height: 60px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: black solid 14px;
+  }
+  
+  #design2 .design2_2{
+    padding-left:76px;
+    padding-right: 71px;
+    padding-top:50px;
+    background: repeating-linear-gradient(
+      -45deg,
+      #000000,
+      #000000 10px, 
+      rgb(44, 108, 182) 14px,
+      rgb(44, 108, 182) 27px
+    );
+  }
+  
+  #homeDesignBoxSection2{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black solid 14px;
+  border-left: black solid 14px;
+  }
+  
+  #designBoxSection2_1{
+  padding: 0 125px 0 150px;
+  margin-left: 69px;
+  margin-top: 20px;
+  
+  width: 100px;
+    height: 100px;
+    background: repeating-linear-gradient(
+      45deg,
+      black 0px,
+     black 8px,
+      transparent 8px,
+      transparent 16px
+    );
+    transform: scale(1.5);
+  }
+  
+  #designBoxSection2_2{
+    font-family: "Utopian One BW";
+    background-color: rgb(218, 33, 57);
+    font-size: 162px;
+    border-left: black solid 14px;
+    border-right: black solid 14px;
+    line-height: 120px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  
+  #homeDesignBoxSection3{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: black solid 14px;
+  }
+  
+  #homeDesignBoxSection3_1{
+    border-left: black solid 14px;
+   padding: 70px 135px;
+   background:
+   radial-gradient(rgb(18, 112, 219) 18%, transparent 22%),
+   radial-gradient(rgb(18, 112, 219) 18%, transparent 22%),
+   transparent;
+  background-position: 0 0, 24px 24px;
+  background-size:50px 50px;
+      background-color: white;
+  }
+  
+  #homeDesignBoxSection3_2{
+    font-family: "Dystopian Bold";
+    font-size: 134px;
+    border-left: black solid 14px;
+    border-right: black solid 14px;
+    line-height: 110px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -10px;
+  }
+  
+  #homeDesignBoxSection3_3{
+    background:
+      radial-gradient(black 18%, transparent 22%),
+      radial-gradient(black 18%, transparent 22%),
+      transparent;
+    background-position: 0 0, 24px 24px;
+    background-size:50px 50px;
+    background-color:rgb(255, 196, 0);
+    padding-left: 321px;
+    padding-right: 240px;
+    border-right: black solid 14px;
+  }
+  
+  #homeDesignBoxSection4{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: black solid 14px;
+    border-left: solid black 14px;
+    border-right:black solid 14px;
+  }
+  
+  #homeDesignBoxSection4_1{
+    border-right: black solid 14px;
+    padding: 10px 74px 10px 65px;
+    margin-right: 20px;
+    background: repeating-linear-gradient(
+      -45deg,
+      #000000,
+      #000000 10px, 
+      rgb(255, 196, 0) 14px,
+      rgb(255, 196, 0) 27px
+    );
+  }
+  
+  #homeDesignBoxSection4_2{
+    font-family: "Utopian Two BW";
+    font-size: 136px;
+    background-color: rgb(255, 196, 0);
+    line-height: 90px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+  padding-right: 30px;
+  padding-top: 5px;
+  letter-spacing: -4px;
+  margin-left: -45px;
+  border-right: black solid 14px;
+  }
+  
+  #homeDesignBoxSection4_3{
+   padding-top: 30px;
+    padding-right: 90px;
+  }
+  
+  .boxSection4_3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  padding-left: 70px;
+  padding-right: 103px;
+    background-color: rgb(255, 196, 0);
+  background-image:  linear-gradient(135deg, black 25%, transparent 25%), linear-gradient(225deg, black 25%, transparent 25%), linear-gradient(45deg, black 25%, transparent 25%), linear-gradient(315deg,black 25%, rgb(255, 196, 0) 25%);
+  background-position:  10px 0, 10px 0, 0px 0, 0px 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+  transform:scale(2);
+  border-left: black solid 7px;
+  }
+
+
+  /*about pagina*/
+
+#section1{
+  padding: 0px 60px 50px 60px;
+}
+
+#section1_box1-2{
+display: flex;
+justify-content: space-between;
+padding: 50px;
+}
+
+#section1_box3-4{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+#box1red{
+  background-color: rgb(218, 33, 57);
+  padding: 100px;
+  border-style: groove;
+  border-width: 6px;
+  border-color: black;
+  font-family: "Utopian One BW";
+  font-size: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#box2yellow{
+  background-color: rgb(255, 196, 0);
+  padding: 100px;
+  border-style: groove;
+  border-width: 6px;
+  border-color: black;
+  font-family: "Utopian One BW";
+  font-size: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#box3blue{
+background-color: rgb(18, 112, 219);
+padding: 100px;
+border-style: groove;
+border-width: 6px;
+border-color: black;
+font-family: "Utopian One BW";
+font-size: 40px;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+#box4white{
+  background-color: white;
+  padding: 100px;
+  border-style: groove;
+  border-width: 6px;
+  border-color: black;
+  font-family: "Utopian One BW";
+  font-size: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.informatie h1{
+  padding: 20px 0px 0px 0px;
+  font-family: "Dystopian Bold";
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.informatie span{
+  font-family: "Dystopian Bold";
+}
+
+#section2_text-photo{
+  text-align: justify;
+  padding: 100px 100px 100px 100px;
+}
+
+#section2_text-photo p{
+  padding: 0 50px 0px 50px;
+  font-family: "Dystopian";
+  font-size: 20px;
+}
+
+#section2_text-photo span{
+  font-family: "Dystopian Bold";
+}
+
+#section2_text-photo img{
+  display: block;
+}
+
+.float_right {
+  float:right;
+  padding-left: 30px;
+}
+
+em{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 25px;
+  font-family: "Dystopian";
+}
+
+#box5{
+  background-color: red;
+  margin-top: 60px;
+  padding: 100px 70px;
+  border-style: groove;
+  border-width: 6px;
+  border-color: black;
+  font-family: "Utopian Two BW";
+  font-size: 36px;
+}
+
+#box6{
+  background-color: rgb(255, 196, 0);
+  padding: 100px 40px 100px 40px;
+  margin-top: 60px;
+  border-style: groove;
+  border-width: 6px;
+  border-color: black;
+  font-family: "Utopian Two BW";
+  font-size: 36px;
+  margin-left: 30px;
+}
+
+#interviews {
+display: flex;
+justify-content: space-between;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.interview{
+  padding: 80px 100px 100px 100px;
+  line-height: 30px;
+  font-family: "Dystopian";
+  text-align: justify;
+}
+
+.interview h3{
+  font-size: 24px;
+  background-color: rgb(255, 196, 0)
+} 
+
+.interview p{
+  font-size: 20px;
+}
+
+
+  /*Design pagina*/
+
+#categories {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  flex-wrap: nowrap;
+}
+
+#categories h4{
+  font-family: "Dystopian Bold";
+  color: white;
+  margin-top: 46px;
+  padding: 15px 75px 15px 75px;
+  text-align: center;
+  flex: 1 1 0;
+  width: 0;
+}
+
+#categories h4:hover{
+  background-color: rgb(255, 196, 0);
+}
+
+.categoriesDesign {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.categoriesDesign p{
+  font-family: sans-serif;
+}
+
+#images {
+  padding: 30px 10px 20px 10px;
+}
+
+#images img{
+  margin-bottom: 20px;
+margin-top: 20px;
+}
+
+#images h3{
+  font-family: "Utopian One BW";
+  text-align: center;
+  font-size: 22px;
+}
+
+#images span{
+  font-family: "Dystopian Bold";
+}
+
+#images h4{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+figcaption{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+/*Contact*/
+
+#bgContact{
+  padding-top:150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mainContact{
+padding: 20px;
+font-size:50px;
+background:
+  radial-gradient(rgb(38, 140, 224) 25%, transparent 25%),
+  radial-gradient(rgb(38, 140, 224) 25%, transparent 25%),
+  transparent;
+background-position: 0 0, 12px 12px;
+background-size:24px 24px;
+background-color: black;
+border: black solid 8px;
+}
+
+form {
+padding:100px 120px;
+border: 1px solid rgba(0,0,0,.5);
+border-radius: 5px;
+background-clip: padding-box;
+background: rgba(0, 0, 0, 0.8); 
+box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+overflow: hidden; 
+font-family: "Dystopian Bold";
+}
+
+form a{
+  display:block;
+  font-size: 18px;
+  color: white;
+  font-family: "Dystopian";
+  text-align: center;
+  text-decoration: none;
+}
+
+textarea{
+background: scroll 16px 16px; 
+width: 276px;
+height: 110px;
+border: 1px solid rgba(255,255,255,.6);
+border-radius: 4px;
+background-clip: padding-box; 
+display:block;
+font-family: "Dystopian Bold";
+font-size:18px;
+color:#fff;
+padding-left:20px;
+padding-right:20px;
+padding-top:12px;
+margin-bottom:20px;
+overflow:hidden;
+}
+
+input {
+width: 276px;
+height: 48px;
+border: 1px solid ;
+border-radius: 4px;
+background-clip: padding-box; 
+display:block;
+font-family: "Dystopian Bold";
+font-size:18px;
+color:#fff;
+padding-left:20px;
+padding-right:20px;
+margin-bottom:20px;
+}
+
+input[type=submit] {
+cursor:pointer;
+}
+
+input.name {
+background: rgb(255, 196, 0) scroll 16px 16px; 
+}
+
+input.email {
+background: rgb(255, 196, 0) scroll 16px 20px;
+}
+
+textarea.message {
+background: rgb(255, 196, 0) scroll 16px 16px;
+}
+
+::-webkit-input-placeholder {
+color: #fff;
+}
+
+input:focus, textarea:focus { 
+background-color: rgba(0, 0, 0, 0.2);
+box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+overflow: hidden; 
+}
+
+.btn {
+width: 138px;
+height: 44px;
+border-radius: 4px;
+float:right;
+border: 1px solid #253737;
+background: rgb(255, 196, 0);
+background: -ms-linear-gradient(top, #6da5a3, #416b68);
+background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+padding: 10.5px 21px;
+border-radius: 6px;
+box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+text-shadow: #333333 0 1px 0;
+color: white;
+}
+
+.btn:hover {
+border: 1px solid #253737;
+text-shadow: #333333 0 1px 0;
+background: rgb(2, 63, 112);
+background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+color: #fff;
+}
+
+.btn:active {
+margin-top:1px;
+text-shadow: #333333 0 -1px 0;
+border: 1px solid #253737;
+background: rgb(38, 140, 224) ;
+background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+color: rgb(255, 196, 0);
+box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+}
+
+iframe{
+filter: grayscale(50%) invert();
+}
+iframe:hover{
+filter:initial; 
+}
